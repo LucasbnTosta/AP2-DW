@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/professor.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="../index.html">Voltar</a>
+        <a href="aluno.html">Adicionar aluno</a>
+        <a href="turma.html">Adicionar sala</a>
+    </div>
+
+    <form action="../php/professor.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="submit">Adicionar Professor</button>
+    </form>
+
+    <button id="listar-professores">listar professores</button>
+    <div id="professores-lista"></div>
+
+
+    <script src="../js/professores.js/professor.js"></script>
+    <script src="../js/professores.js/professorrequi.js"></script>
+</body>
+</html>

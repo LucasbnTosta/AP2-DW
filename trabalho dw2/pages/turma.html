@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>turmas</title>
+    <link rel="stylesheet" href="../css/Turma.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="../index.html">Voltar</a>
+        <a href="aluno.html">Adicionar aluno</a>
+        <a href="professor.html">Adicionar professor</a>
+    </div>
+
+    <form action="" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="sala">Sala:</label>
+        <input type="text" id="sala" name="sala" required>
+
+        <label for="professor">Professor:</label>
+        <select id="professor" name="professor" required>
+            <!-- Opções para o professor -->
+        </select>
+
+        <!-- Corrigido o posicionamento do botão -->
+        <button type="submit">Adicionar Turma</button>
+    </form>
+
+  
+    <button id="listar-turmas">listar Turmas</button>
+    <div id="turmas-lista"></div>
+
+    <script src="../js/turmas.js/tumasrequi.js"></script>
+    <script src="../js/turmas.js/turma.js"></script>
+</body>
+</html>
