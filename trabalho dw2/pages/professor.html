@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro Professor</title>
+</head>
+
+<body>
+  <div>
+    <a href="index.html">Inicio</a> |
+    <a href="aluno.html">Aluno</a> |
+    <a href="turma.html">Turma</a>
+  </div>
+
+  <h1>Cadastro do Professor</h1>
+  <form id="professor-form">
+    <label>Nome: <input type="text" name="nome" required></label><br>
+    <label>Matéria: <input type="text" name="materia" required></label><br>
+    <label>Observação: <input type="text" name="observacao" required></label><br>
+    <label>Idade: <input type="number" name="idade" required></label><br>
+    <button type="submit">Cadastrar Professor</button>
+  </form>
+
+  <hr>
+
+  <button id="listar-professor">Listar Professor</button>
+  <div id="professor-lista">
+
+
+  </div>
+
+  <!-- Pop-up para editar aluno -->
+  <div id="edit-popup" style="display:none;">
+    <h2>Editar Professor</h2>
+    <form id="update-form">
+        <label>Nome: <input type="text" name="nome" required></label><br>
+        <label>Matéria: <input type="text" name="materia" required></label><br>
+        <label>Observação: <input type="text" name="observacao" required></label><br>
+        <label>Idade: <input type="number" name="idade" required></label><br>
+        <button type="submit">Atualizar</button>
+      <button type="button" id="close-popup">Fechar</button>
+    </form>
+  </div>
+
+  <script src="../js/professores.js/professor.js"></script>
+</body>
+
+</html>
