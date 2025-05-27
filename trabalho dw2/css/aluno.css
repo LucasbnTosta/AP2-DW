@@ -1,0 +1,129 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+/* Navegação */
+div:first-of-type {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div:first-of-type a {
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+div:first-of-type a:hover {
+    color: #ffffff;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Formulário de cadastro */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button[type="submit"],
+button[type="button"],
+#listar-alunos {
+    background-color: #00e5ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+#listar-alunos:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+/* Botão de listar */
+#listar-alunos {
+    display: block;
+    margin: 30px auto;
+}
+
+/* Lista de alunos com fundo branco */
+#alunos-lista {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff; /* fundo branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #000; /* texto preto */
+}
+
+/* Pop-up de edição */
+#edit-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #263238;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    max-width: 500px;
+    width: 90%;
+    z-index: 1000;
+}
+
+#edit-popup h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00e5ff;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form, #edit-popup, #alunos-lista {
+        padding: 20px;
+    }
+}
