@@ -1,0 +1,22 @@
+// Substitua 'SUA_CHAVE_AQUI' pela sua chave da API do WeatherAPI
+const apiKey = 'SUA_CHAVE_AQUI';
+const cidade = 'São Paulo';
+
+function buscarClima() {
+  const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cidade}&lang=pt`;
+
+  fetch(url)
+    .then(resposta => resposta.json())
+    .then(dados => {
+      const temperatura = dados.current.temp_c;
+      const condicao = dados.current.condition.text;
+
+      document.getElementById('temp').textContent = `${temperatura}°`;
+      document.getElementById('condicao').textContent = condicao;
+    })
+    .catch(erro => {
+      console.error('Erro ao buscar o clima:', erro);
+    });
+}
+
+buscarClima();
